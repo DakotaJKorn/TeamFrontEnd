@@ -1,0 +1,31 @@
+@import '../../globalStyles/colors';
+@import '../../globalStyles/layouts';
+@import '../../globalStyles/media-queries';
+
+.motorcycle-container{
+    height: 80px;
+    width: 100%;
+    @extend %Flex-Row-Centered;
+    transition: background-color 0.25s;
+
+    &:hover{
+        background-color: $Sky-Blue;
+        cursor: pointer;
+    }
+
+    .motorcycle-content{
+        height: 100%;
+        width: 98%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        justify-content: space-evenly;
+
+        .prop-container{
+            height: 100%;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

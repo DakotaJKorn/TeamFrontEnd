@@ -1,0 +1,11 @@
+@import '../../globalStyles/colors';
+@import '../../globalStyles/layouts';
+@import '../../globalStyles/media-queries';
+
+.header-container{
+    height: 60px;
+    @extend %Flex-Row-Centered;
+    @extend %LightBlue-White-Color-Scheme;
+    font-weight: bold;
+    font-size: 24px;
+}

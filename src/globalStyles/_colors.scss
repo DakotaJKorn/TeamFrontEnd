@@ -1,0 +1,15 @@
+$Sky-Blue: #b2cbd3;
+$Light-Blue: #008db9;
+$Dark-Blue: #00546f;
+$Light-Grey: #e9e9e9;
+$Dark-Grey:	#23282a;
+
+%LightBlue-White-Color-Scheme{
+    background-color: $Light-Blue;
+    color: white;
+}
+
+%LightGrey-DarkGrey-Color-Scheme{
+    background-color: $Light-Grey;
+    color: $Dark-Grey;
+}
