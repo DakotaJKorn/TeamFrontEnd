@@ -4,8 +4,56 @@
 
 .header-container{
     height: 60px;
-    @extend %Flex-Row-Centered;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     @extend %LightBlue-White-Color-Scheme;
     font-weight: bold;
     font-size: 24px;
+
+
+    .header-container-one{
+        height: 100%;
+        width: 30vw;
+        margin-right: 10px;
+    }
+
+    .header-container-two{
+        height: 100%;
+        width: 40vw;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-container-three{
+        height: 100%;
+        width: 30vw;
+        margin-right: 3px;
+        display: flex;
+        align-items: center;
+
+        .search-container{
+            height: 35px;
+            width: 96%;
+            display: flex;
+            align-items: center;
+
+            .search-input{
+                height: 100%;
+                width: 100%;
+                border: 1px solid black;
+                flex-shrink: 0;
+            }
+
+            .search-button{
+                flex-shrink: 0;
+                height: 90%;
+                width: 60px;
+                margin-left: -65px;
+                cursor: pointer;
+            }
+        }
+    }
 }

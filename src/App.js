@@ -4,9 +4,15 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
 function App() {
+
+  function handleSearchClick(){
+    console.log("Search Clicked");
+}
+
+
   return (
     <div>
-      <Header />
+      <Header Click={handleSearchClick}/>
       <Body />
       <Footer />
     </div>
